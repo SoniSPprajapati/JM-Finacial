@@ -1,0 +1,239 @@
+
+.sociales {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+	#timeline {
+		width: 73%;
+		overflow: hidden;
+		margin: 25px auto;
+		position: relative;
+		background: url('./../assets/images/journey/dot.gif') left 41px repeat-x;
+	}
+		/* #dates {
+			overflow: hidden;
+		} */  /* (changed by Samudrika 26-Apr-2017) */
+		#dates {
+			margin-bottom: 16px;
+			overflow: hidden;
+		}
+			#dates li {
+				list-style: none;
+				float: left;
+				width: 200px;
+				height: 55px;
+				font-size: 21px;
+				text-align: center;
+				/*background: url('./../assets/images/journey/biggerdot.png') 60% bottom no-repeat;*/
+			}
+				#dates a {
+					line-height: 20px;
+					padding-bottom: 10px;
+					width: 100%;
+					/* margin-left: 31%; */ /* (changed by Samudrika 26-Apr-2017) */
+					text-decoration: none;
+					background: url('./../assets/images/journey/small_dot.png') 50% 100% no-repeat;
+					background-size: 15px;
+					padding-bottom: 13%;
+				}
+					#dates a.selected {
+						font-size: 27px;
+						background: url('./../assets/images/journey/biggerdot.png') 54% bottom no-repeat;
+						padding-bottom: 12%;
+						background-size: 20px;
+					}
+		
+		#issues {
+			width: 800px;
+			overflow: hidden;
+		}	
+			#issues li {
+				width: 800px;
+				list-style: none;
+				float: left;
+			}
+				/*#issues li.selected img {
+					-webkit-transform: scale(1.1,1.1);
+					-moz-transform: scale(1.1,1.1);
+				    -o-transform: scale(1.1,1.1);
+				    -ms-transform: scale(1.1,1.1);
+				    transform: scale(1.1,1.1);
+				}*/
+				#issues li img {
+					background: transparent;
+					-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */   
+					filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);/* IE 6 & 7 */      
+					zoom: 1;
+					-webkit-transition: all 2s ease-in-out;
+					-moz-transition: all 2s ease-in-out;
+					-o-transition: all 2s ease-in-out;
+					-ms-transition: all 2s ease-in-out; 
+					transition: all 2s ease-in-out;
+					-webkit-transform: scale(0.7,0.7);
+					-moz-transform: scale(0.7,0.7);
+				    -o-transform: scale(0.7,0.7);
+				    -ms-transform: scale(0.7,0.7);
+				    transform: scale(0.7,0.7);
+				}
+				#issues li h1 {
+					color: #2c66a4;
+					font-size: 48px;
+					margin: 20px ;
+					/* text-shadow: #000 1px 1px 2px; */
+					visibility: show;
+				}
+				#issues li p {
+					 padding: 11px 5px 0;
+					font-size: 16px;
+					font-weight: normal;
+					line-height: 22px;
+					/*text-shadow: #000 1px 1px 2px;*/
+					margin-bottom: 3%;
+				}
+		
+		#grad_left,
+		#grad_right {
+			width: 100px;
+			position: absolute;
+			top: 0;
+		}
+			#grad_left {
+		        left: 0;
+		        /*background: url('./../assets/images/journey/grad_left.png') repeat-y;*/
+			}
+			#grad_right {
+		        right: 0;
+		        /*background: url('./../assets/images/journey/grad_right.png') repeat-y;*/
+			}
+		
+		#next,
+		#prev {
+			position: absolute;
+			top: 0;
+			font-size: 70px;
+			top: 170px;
+			width: 50px;
+			height: 50px;
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			text-indent: -9999px;
+			overflow: hidden;
+		}
+			#next:hover,
+			#prev:hover {
+				/*background-position: 0 -76px;*/
+			}
+			#next {
+				    right: 0;
+    background-image: url('./../assets/images/journey/next.png');
+    top: 0px;
+    height: 80px;
+    background-position: center center;
+    background-color: #fff;
+			}
+			#prev {
+				left: 0;
+				background-image: url('./../assets/images/journey/prev.png');
+    top: 0px;
+    height: 80px;
+    background-position: center center;
+    background-color: #fff;
+			}
+				#next.disabled,
+				#prev.disabled {
+					opacity: 0.2;
+				}
+
+.journey_header{
+  text-align: center;
+  font-size: 18px;
+  color: #2c66a4;
+  margin: 2% 0;
+}
+
+.journey_header p{
+  font-size: 30px;
+  font-weight: bold;
+}
+.journey_header span{margin-left:30px;}
+.bord_left{
+	position: 	relative;	
+}
+.bord_left:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: -2px;
+    background: #e7e7e7;
+    top: -5px;
+}
+ul{
+	margin-bottom: 0;
+}
+
+.icon_div{
+	width: 100%;
+	text-align: center;
+	/* padding: 20% 15% 20% 0; */ /* (changed by Samudrika 26-Apr-2017) */
+	padding: 0;
+}
+
+.icon_div img{
+	display: inline-block;
+}
+
+.right_para{
+	float: left;
+}
+
+.bor_right{
+	border-right: 2px solid #e7e7e7;
+}
+
+.bor_bottom {
+    border-bottom: 3px solid #ed3123;;
+    padding-bottom: 4%;
+}
+
+#issues li p{position: relative; padding:5px}
+#issues li p::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    /* resize: ; */
+   right: -18px;
+    background: #848181;
+    border-radius: 50%;
+    z-index: 5;
+}
+#issues li .right_para p::after,#issues li .right_para_2 p::after {
+    
+   left: -18px;
+    
+}
+.right_para_2{
+}
+@media(max-width:1200px){/*md conatiner which has width of 970px*/
+	#timeline {
+    width: 84%;}
+}
+@media(max-width:992px){/*sm container which has width of 750px*/
+	#timeline {
+    width: 92%;}
+    #dates li{background-position: 	51% bottom;}
+    #dates a{margin-left: 	2%;}
+}
+@media(max-width:767px){/*xs container below 768px is width 100%*/
+	#issues li p{
+		text-align: left;
+	    margin-left: 30px;
+	}
+
+	#issues li p::after{
+		left: -20px
+	}
+}
